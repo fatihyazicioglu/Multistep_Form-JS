@@ -6,5 +6,25 @@
 }
 
 .form-group{
-    
+ display: flex;   
+ flex-direction: column;
+ gap: .25rem;
+ margin-bottom: .3rem;
+}
+
+.form-group:last-child{
+    margin: 0;
+}
+
+.form-group > label{
+font-weight: bold;
+font-size: .8em;
+color: #333
+}
+
+.form-group > input{
+    border:1 px solid #333;
+    border-radius: .25em;
+    font-size: 1rem;
+    padding: .25em;
 }
