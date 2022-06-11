@@ -12,7 +12,7 @@
     <form data-multi-step>
 <!-- step 1 -->
         <div class="card" data-step="1">
-            <h3 class="step-title">This is step1</h3>
+            <h3 class="step-title">This is step 1</h3>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
@@ -24,18 +24,22 @@
             </div>
             <button type="button">Next</button>
         </div>
-
         
 <!-- step 2 -->
         <div class="card" data-step="2">
-            <h3 class="step-title">This is step1</h3>
+            <h3 class="step-title">This is step 2</h3>
             <div class="form-group">
                 <label for="adress">Adress</label>
                 <input type="adress" name="adress" id="adress">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <label for="password">City</label>
+                <input type="text" name="zipcode" id="zipcode">
+            
+            </div>
+            <div class="form-group">
+                <label for="zipcode">Zip Code</label>
+                <input type="text" name="city" id="city">
             
             </div>
             <button type="button">Previous</button>
@@ -44,14 +48,25 @@
         </div>
 
 <!-- step 3 -->
-
         <div class="card" data-step="3">
-             <button type="submit">Submit</button>
+    <h3 class="step-title">This is step 3</h3>
+   
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName">
+    
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+    </div>
+    <button type="button">Previous</button>
+    <button type="button">Submit</button>
         </div>
+
     </form>
-
-
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>
