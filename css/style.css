@@ -3,6 +3,7 @@
     border : 1px solid #333;
     border-radius: .5rem;
     padding: .5rem;
+    display: none;
 }
 
 .form-group{
@@ -33,4 +34,8 @@ color: #333
     margin: 0;
     margin-bottom: 1rem;
     text-align: center;
+}
+
+.card.active{
+    display: block;
 }
