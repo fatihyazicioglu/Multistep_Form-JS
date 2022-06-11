@@ -14,7 +14,7 @@ if (currentStep <0){
 }
 
 
-// function for the Next-Previous button with reportValidity()
+// function for the Next-Previous button with reportValidity(). // i want to make sure that the inputs valid
 multiStepForm.addEventListener("click", e =>{
     let incrementor
     if(e.target.matches("[data-next]")){
@@ -32,12 +32,21 @@ if(allValid){
     showCurrentStep()
 })
 
+formSteps.forEach(step =>{
+    step.addEventListener("animationend", (e) =>{
+        formSteps[currentStep].classList.remove("hide")
+        e.target.classList.toggle("hide", e.target.classList.contains("active")) 
+    })
+})
+
 
 // hide and show the current step by toggleing the class "active"
 function showCurrentStep(){
     formSteps.forEach((step,index) =>{
         step.classList.toggle ("active", index===currentStep)
+        if (index === currentStep){
+            step.classList.remove("hide")
+        }
     })
 }
 
-// i want to make sure that the inputs valid
