@@ -5,6 +5,7 @@
     padding: .5rem;
     max-width: 300px;
     margin: 0 auto;
+    
     animation:fade 500ms  ease-in-out forwards;
     /* the active one is going to kind of animate in the screen as long as we give it a transition */
     opacity: 0;
